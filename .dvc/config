@@ -1,0 +1,4 @@
+[core]
+    remote = mlopsemailspam
+['remote "mlopsemailspam"']
+    url = s3://mlops-emailspam
