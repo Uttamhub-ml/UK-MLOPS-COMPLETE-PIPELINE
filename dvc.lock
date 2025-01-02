@@ -48,7 +48,7 @@ stages:
       size: 3908
     params:
       params.yaml:
-        feature_engineering.max_features: 50
+        feature_engineering.max_features: 45
     outs:
     - path: data/processed
       hash: md5
@@ -69,8 +69,8 @@ stages:
       size: 4478
     params:
       params.yaml:
-        model_building.n_estimators: 22
-        model_building.random_state: 2
+        model_building.n_estimators: 20
+        model_building.random_state: 5
     outs:
     - path: models/model.pkl
       hash: md5
@@ -85,8 +85,8 @@ stages:
       size: 998454
     - path: src/model_evaluation.py
       hash: md5
-      md5: 2f6f27c0a0f9ad9c0fe861ef02621bc8
-      size: 4650
+      md5: 87e75e0629a02c0ed78854d473881dc9
+      size: 4638
     outs:
     - path: reports/metrics.json
       hash: md5
